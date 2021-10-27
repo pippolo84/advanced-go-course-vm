@@ -5,6 +5,5 @@ Vagrant.configure("2") do |config|
   end
   config.vm.box = "ubuntu/hirsute64"
   config.vm.synced_folder ".", "/home/vagrant/advanced-go-course"
-  config.vm.network "private_network", type: "dhcp"
   config.vm.provision "shell", path: "provision.sh"
 end
